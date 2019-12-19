@@ -13,15 +13,15 @@
         <div class="form">
           <div class="col">
             <label class="font-size-16"for="name">Nome e Cognome</label>
-            <input class="font-size-16"placeholder="Nome e Cognome" type="text" name="name" value="">
+            <input id="name"class="font-size-16"placeholder="Nome e Cognome" type="text" name="name" value="">
           </div>
           <div class="col">
             <label class="font-size-16"for="km">KM da percorrere</label>
-            <input class="font-size-16" placeholder="KM da percorrere" type="number" name="km" value="">
+            <input id="km"class="font-size-16" placeholder="KM da percorrere" type="number" name="km" value="">
           </div>
           <div class="col">
             <label class="font-size-16" for="age">Fascia d'età</label>
-            <select class="fascia font-size-16" name="age">
+            <select id="age" class="fascia font-size-16" name="age">
               <option value="">Minorenne</option>
               <option value="">Maggiorenne</option>
               <option value="">Over 65</option>
@@ -29,8 +29,8 @@
           </div>
         </div>
         <div class="buttons">
-          <button class="font-size-16" type="button" name="button">Genera</button>
-          <button class="font-size-16" type="button" name="button">Annulla</button>
+          <button id="genera" class="font-size-16" type="button" name="button">Genera</button>
+          <button id="annulla" class="font-size-16" type="button" name="button">Annulla</button>
         </div>
       </div>
       <h1>IL TUO BIGLIETTO</h1>
@@ -38,22 +38,22 @@
         <h3 class="font-size-16">DETTAGLIO PASSEGGERI</h3>
         <div class="tk-container">
           <div class="passenger">
-            <h4 class="font-size-16">NOME PASSEGGERO</h4>
+            <h4 id="passengerName"class="font-size-16">NOME PASSEGGERO</h4>
             <h6 class="font-size-16">Nome del passeggero</h6>
           </div>
           <div class="tk-detail">
             <table>
-              <thead class="font-size-16">
+              <thead>
                 <th>Offerta</th>
                 <th>Carrozza</th>
                 <th>Codice CP</th>
                 <th>Costo Biglietto</th>
               </thead>
               <tr>
-                <td>Tipo di Biglietto</td>
-                <td>Numero Carrozza</td>
-                <td>Codice del CP</td>
-                <td>Costo del blietto</td>
+                <td id="ticketTipe">Tipo di Biglietto</td>
+                <td id="carriageNumber">Numero Carrozza</td>
+                <td id="cpCode">Codice del CP</td>
+                <td id="ticketPrice">Costo del blietto</td>
               </tr>
             </table>
 
