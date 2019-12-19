@@ -100,6 +100,9 @@ h1 {
   padding: 15px;
   line-height: 20px;
 }
+.passenger h6 {
+  padding-top: 15px;
+}
 .tk-detail {
   width: 80%;
 }
