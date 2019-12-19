@@ -1,3 +1,4 @@
+//TASTO GENERA
 var genera = document.getElementById('genera')
 genera.addEventListener('click',
   function() {
@@ -32,7 +33,7 @@ genera.addEventListener('click',
       ticketTipe = 'Sconto Silver';
     }
 
-    // // STAMPA BIGLIETTO + TASTO GENERA
+    // // STAMPA BIGLIETTO
     //Nome
     document.getElementById('passengerName').innerHTML = name;
     //Offerta
