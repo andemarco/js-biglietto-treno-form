@@ -7,6 +7,14 @@ body {
   background-color: #992353;
   font-family: 'Montserrat', sans-serif;
 }
+.hidden {
+  opacity: 0;
+  transition: 1s;
+}
+.visible {
+  opacity: 1;
+  transition: 1s;
+}
 h1 {
   text-align: center;
   color: white;

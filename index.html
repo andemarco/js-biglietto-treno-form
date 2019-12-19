@@ -12,16 +12,16 @@
       <div class="form-container">
         <div class="form">
           <div class="col">
-            <label class="font-size-16"for="name">Nome e Cognome</label>
-            <input id="name"class="font-size-16"placeholder="Nome e Cognome" type="text" name="name" value="">
+            <label class="font-size-16" for="name">Nome e Cognome</label>
+            <input id="name" class="font-size-16" placeholder="Nome e Cognome" type="text" name="name" value="">
           </div>
           <div class="col">
-            <label class="font-size-16"for="km">KM da percorrere</label>
-            <input id="km"class="font-size-16" placeholder="KM da percorrere" type="number" name="km" value="">
+            <label class="font-size-16" for="km">KM da percorrere</label>
+            <input id="km" class="font-size-16" placeholder="KM da percorrere" type="number" name="km" value="">
           </div>
           <div class="col">
             <label class="font-size-16" for="age">Fascia d'età</label>
-            <select id="age"class="fascia font-size-16" name="age">
+            <select id="age" class="fascia font-size-16" name="age">
               <option value="minorenne">Minorenne</option>
               <option value="maggiorenne">Maggiorenne</option>
               <option value="over 65">Over 65</option>
@@ -34,7 +34,7 @@
         </div>
       </div>
       <h1>IL TUO BIGLIETTO</h1>
-      <div class="ticket">
+      <div id="ticket-show" class="ticket hidden">
         <h3 class="font-size-16">DETTAGLIO PASSEGGERI</h3>
         <div class="tk-container">
           <div class="passenger">
@@ -44,10 +44,12 @@
           <div class="tk-detail">
             <table>
               <thead>
-                <th>Offerta</th>
-                <th>Carrozza</th>
-                <th>Codice CP</th>
-                <th>Costo Biglietto</th>
+                <tr>
+                  <th>Offerta</th>
+                  <th>Carrozza</th>
+                  <th>Codice CP</th>
+                  <th>Costo Biglietto</th>
+                </tr>
               </thead>
               <tr>
                 <td id="ticketTipe"></td>
@@ -56,9 +58,7 @@
                 <td id="ticketPrice"></td>
               </tr>
             </table>
-
           </div>
-
         </div>
       </div>
     </div>

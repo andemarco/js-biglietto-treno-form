@@ -32,7 +32,7 @@ genera.addEventListener('click',
       ticketTipe = 'Sconto Silver';
     }
 
-    // // STAMPA BIGLIETTO
+    // // STAMPA BIGLIETTO + TASTO GENERA
     //Nome
     document.getElementById('passengerName').innerHTML = name;
     //Offerta
@@ -43,5 +43,25 @@ genera.addEventListener('click',
     document.getElementById('cpCode').innerHTML = cP;
     //costo Biglietto
     document.getElementById('ticketPrice').innerHTML ='€ ' + costoBiglietto.toFixed(2);
+    //Biglietto Visibile
+    document.getElementById('ticket-show').classList.remove('hidden')
+    document.getElementById('ticket-show').classList.add('visible')
+  }
+);
+
+// TASTO ANNULLA
+var annulla = document.getElementById('annulla');
+annulla.addEventListener('click',
+  function() {
+    document.getElementById('passengerName').innerHTML = '';
+    document.getElementById('ticketTipe').innerHTML = '';
+    document.getElementById('carriageNumber').innerHTML = '';
+    document.getElementById('cpCode').innerHTML = '';
+    document.getElementById('ticketPrice').innerHTML ='€ ' + '';
+    document.getElementById('km').value = ''
+    document.getElementById('age').value = ''
+    document.getElementById('name').value = ''
+    document.getElementById('ticket-show').classList.remove('visible')
+    document.getElementById('ticket-show').classList.add('hidden')
   }
 );
