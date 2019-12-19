@@ -12,12 +12,16 @@ h1 {
   color: white;
   margin-top: 20px;
 }
+.font-size-16 {
+  font-size: 16px;
+}
 .form-container {
   width: 80%;
   margin: 0 auto;
   background-color: white;
   border-radius: 12px;
   margin-top: 20px;
+  box-shadow: 2px 0px 26px -4px rgba(0,0,0,0.75);
 }
 .form {
   display: flex;
@@ -31,14 +35,76 @@ h1 {
 }
 .col label {
   color: #992353;
-  font-size: 16px;
 }
 .col input {
   border: 1px solid #992353;
   height: 25px;
   border-radius: 5px;
+  margin: 12px;
+  text-align: center;
+}
+.col input:focus {
+  background-color: #992353;
+  color: white;
+}
+.col input::placeholder {
+  line-height: 25px;
+  text-align: center;
+}
+.col input:focus::placeholder {
+  color: white;
+}
+.fascia {
+  border: 1px solid #992353;
+  height: 25px;
+  border-radius: 5px;
+  margin: 12px;
 }
 .buttons {
   display: flex;
   justify-content: center;
+}
+.buttons button {
+  color: #992353;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  border-radius: 2px;
+  padding: 5px;
+  margin: 0 10px 20px 10px;
+}
+
+.buttons button:hover {
+  cursor: pointer;
+  background-color: darkgrey;
+  color: white;
+}
+
+.ticket {
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 12px;
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: 2px 0px 26px -4px rgba(0,0,0,0.75);
+}
+.tk-container {
+  display: flex;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+.passenger {
+  width: 20%;
+  background-color: grey;
+  text-align: left;
+  padding: 15px;
+  line-height: 20px;
+}
+.tk-detail {
+  width: 80%;
+}
+th, td {
+  padding: 20px;
+  text-align: left;
+  font-size: 16px;
 }
